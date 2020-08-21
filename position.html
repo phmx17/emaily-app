@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+body {
+    height: 4000px
+}
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+    #box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 2;
+        background: red;
+    }
+    .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+        margin: auto;
+    }
+    #box-2 {
+        top: 100px;
+        left: 100px;
+        position: absolute;
+        background: yellow;
+    }
+    #box-3 {
+        bottom: 100px;
+        right: 100px;
+        position: absolute;
+        background: green;
+    }
+    #box-4 {
+        position: fixed;
+        background: blue;
+    }
+    #box-5 {
+        position: sticky;
+        top: 0;
+        background: orange;
+    }
+</style>
+    
+
+
+<body>
+    
+        <div id="box-1" class="box">
+            <h3>Heading 1</h3>            
+        </div>
+        <div class="container">
+            <div id="box-2" class="box">
+                <h3>Heading 2</h3>     
+                
+            </div>
+            <div id="box-3" class="box">
+                <h3>Heading 3</h3>                
+            </div>
+        </div>
+
+        <div id="box-4" class="box">
+            <h3>Heading 3</h3>            
+        </div>
+        <div id="box-5" class="box">
+            <h3>Heading 3</h3>            
+        </div>
+
+  
+</body>
+</html>
